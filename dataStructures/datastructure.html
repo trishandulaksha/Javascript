@@ -1,0 +1,72 @@
+<html>
+
+<head>
+
+    <script>
+
+        // ARRAYS
+        console.log("____ARRAYS____");
+
+        let x = ["kamal"];
+
+        // add values to the end of the array
+        x.push("nimal")
+
+        // Add values in start of the array
+
+        x.unshift("Merinchchage")
+
+        // delete first item in array
+        x.splice(0, 1)
+
+        console.log(x);
+
+        // OBJECTS
+
+        console.log("____OBJECTS____");
+
+        let y = { name: 'trishan' }
+
+        // Add values to the object
+
+        y.age = 32;
+        y.height = "12";
+
+        // Remove the values from object 
+        console.log("Before remove the values ", y);
+
+        delete y.height
+
+
+
+        console.log("After remove the values", y);
+
+        // MAP object
+
+        let mapObject = new Map();
+
+        // Set values in Map Object
+        mapObject.set('name', 'kamal')
+        mapObject.set('age', 'bimal')
+
+        // Console logged map object
+
+        console.log(mapObject);
+
+        // get object data 
+        console.log(
+            mapObject.get('name'));
+
+        // Delete Map object data
+        console.log(" Delete Map object data");
+        mapObject.delete('age');
+
+        console.log(mapObject)
+
+
+
+
+    </script>
+</head>
+
+</html>
