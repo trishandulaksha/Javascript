@@ -10,14 +10,14 @@
         let x = ["kamal"];
 
         // add values to the end of the array
-        x.push("nimal")
+        x.push("nimal");
 
         // Add values in start of the array
 
-        x.unshift("Merinchchage")
+        x.unshift("Merinchchage");
 
         // delete first item in array
-        x.splice(0, 1)
+        x.splice(0, 1);
 
         console.log(x);
 
@@ -25,7 +25,7 @@
 
         console.log("____OBJECTS____");
 
-        let y = { name: 'trishan' }
+        let y = { name: 'trishan' };
 
         // Add values to the object
 
@@ -35,20 +35,21 @@
         // Remove the values from object 
         console.log("Before remove the values ", y);
 
-        delete y.height
+        delete y.height;
 
 
 
         console.log("After remove the values", y);
 
-        // MAP object
+        // MAP object and Set Object
+        let setObject = new Set();
 
         let mapObject = new Map();
 
         // Set values in Map Object
-        mapObject.set('name', 'kamal')
-        mapObject.set('age', 'bimal')
-
+        mapObject.set('name', 'kamal');
+        mapObject.set('age', 'bimal');
+        mapObject.set('height', 32)
         // Console logged map object
 
         console.log(mapObject);
@@ -61,9 +62,18 @@
         console.log(" Delete Map object data");
         mapObject.delete('age');
 
-        console.log(mapObject)
+        console.log(mapObject);
+
+        // Set and Map both object have a method of has
 
 
+
+        setObject.add(32);
+
+        console.log("checked has method map and set");
+
+        console.log(mapObject.has('height',32));
+        console.log(setObject.has(32));
 
 
     </script>
